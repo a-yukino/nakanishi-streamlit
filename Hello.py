@@ -31,6 +31,7 @@ def about_page():
     st.write("例えば、人間が持っている言葉とAIの組み合わせによる、楽曲の制作などが挙げられます。")
 
     st.write("中西先生を生成形AIで作ってみました！（以下画像参照）")
+        
     st.image("nakanishi.t.jpg", caption="生成系AIで作成した先生の画像", use_column_width=True)
     st.write("（この画像は、中西先生を可愛い作画の絵にした場合の画像です。）")
 
