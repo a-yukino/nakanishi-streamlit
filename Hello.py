@@ -18,11 +18,17 @@ def home_page():
         - 武蔵野大学のホームページは[こちら](https://www.musashino-u.ac.jp/)
     """
     )
+    st.image("ariake.jpg", caption="武蔵野大学有明キャンパス", use_column_width=True)
+    st.image("ai.jpg", caption="生成系AIで生成したデータサイエンス学部ぽい画像", use_column_width=True)
         
 def about_page():
     st.write("このページでは、中西先生の紹介をさせていただきます。")
     st.write("また、表示されている先生のイメージ画像は生成系AIを使って、先生の特徴をPromptして生成したものです。")
 
+    st.image("nakanishi.t.jpg", caption="画像のキャプション", use_column_width=True)
+    st.write("（この画像は、中西先生を可愛い作画の絵にした場合の画像です。）")
+    st.image("Nakanishi:T(non glasses).jpg", caption="画像のキャプション", use_column_width=True)
+    st.write("（この画像は、先生をリアルに寄せた作画の絵にした場合の画像です。）")
 
 if page == "HOME":
     home_page()
