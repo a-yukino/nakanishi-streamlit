@@ -2,22 +2,15 @@ import pandas as pd
 import numpy as np
 import streamlit as st
 
-from streamlit.logger import get_logger
-
-LOGGER = get_logger(__name__)
-
-page = st.sidebar.selectbox("ページを選択", ("HOME", "教授の紹介"))
-
-def home_page():
-    st.set_page_config(
+st.set_page_config(
         page_title="武蔵野大学データサイエンス学部",
         page_icon="💻",
         )
 
-    st.write("# 武蔵野大学データサイエンス学部紹介ページ")
+page = st.sidebar.selectbox("ページを選択", ("HOME", "教授の紹介"))
 
-    st.sidebar.success("知りたいコンテンツを選択してください。")
-
+def home_page():
+    st.title("武蔵野大学データサイエンス学部紹介ページ")
     st.markdown(
         """
         このwebアプリでは、武蔵野大学データサイエンス学部の活動や学校生活に関して紹介します。
