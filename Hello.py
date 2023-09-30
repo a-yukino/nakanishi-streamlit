@@ -9,25 +9,22 @@ LOGGER = get_logger(__name__)
 page = st.sidebar.selectbox("ページを選択", ("HOME", "教授の紹介"))
 
 def home_page():
-    def run():
-        st.set_page_config(
-            page_title="武蔵野大学データサイエンス学部",
-            page_icon="💻",
-            )
-
-        st.write("# 武蔵野大学データサイエンス学部紹介ページ")
-
-        st.sidebar.success("知りたいコンテンツを選択してください。")
-
-        st.markdown(
-            """
-            このwebアプリでは、武蔵野大学データサイエンス学部の活動や学校生活に関して紹介します。
-        
-            - 武蔵野大学のホームページは[こちら](https://www.musashino-u.ac.jp/)
-        """
+    st.set_page_config(
+        page_title="武蔵野大学データサイエンス学部",
+        page_icon="💻",
         )
-        if __name__ == "__main__":
-            run()
+
+    st.write("# 武蔵野大学データサイエンス学部紹介ページ")
+
+    st.sidebar.success("知りたいコンテンツを選択してください。")
+
+    st.markdown(
+        """
+        このwebアプリでは、武蔵野大学データサイエンス学部の活動や学校生活に関して紹介します。
+        
+        - 武蔵野大学のホームページは[こちら](https://www.musashino-u.ac.jp/)
+    """
+    )
         
 def about_page():
     st.write("このページでは、中西先生の紹介をさせていただきます。")
