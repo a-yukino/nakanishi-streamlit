@@ -27,7 +27,7 @@ def about_page():
 
     st.image("nakanishi.t.jpg", caption="生成系AIで作成した先生の画像", use_column_width=True)
     st.write("（この画像は、中西先生を可愛い作画の絵にした場合の画像です。）")
-    st.image("Nakanishi:T(non glasses).jpg", caption="生成系AIで作成した先生の画像", use_column_width=True)
+    st.image("teacher.jpg", caption="生成系AIで作成した先生の画像", use_column_width=True)
     st.write("（この画像は、先生をリアルに寄せた作画の絵にした場合の画像です。）")
 
 if page == "HOME":
